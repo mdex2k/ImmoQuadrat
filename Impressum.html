@@ -141,6 +141,36 @@
 
 
 
+ <div class="cookie-banner">
+   <div class="cookie_content">
+      <p>Diese Webseite verwendet Cookies. Durch das Nutzen dieser Seite sind Sie mit der Verwendung von Cookies einverstanden. <a href="datenschutz.html">Mehr Informationen</a></p>
+      <button class="cookie-accept">Ok</button>
+   </div>
+</div>
+
+
+<!-- cookie js -->
+
+<script>
+const cookieBanner = document.querySelector('.cookie-banner');
+const cookieAccept = document.querySelector('.cookie-accept');
+
+cookieAccept.addEventListener('click', () => {
+cookieBanner.style.display = 'none';
+localStorage.setItem('cookieAccepted', 'true');
+});
+
+if (localStorage.getItem('cookieAccepted')) {
+cookieBanner.style.display = 'none';
+} else {
+cookieBanner.style.display = 'block';
+}
+</script>
+
+
+
+
+
  
 <script src="js/script.js"></script>
 </body>

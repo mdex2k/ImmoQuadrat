@@ -480,7 +480,39 @@ h3.food-name{
 }
 
 
-
+/* cookie banner */
+.cookie-banner {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #020000c5;
+	color: #fff;
+	padding: 20px;
+	z-index: 999;
+	text-align: center;
+  }
+  .cookie-banner p{
+	color: #fbfbfb;
+  }
+  .cookie_content{
+    width: 60%;
+	margin:0 auto;
+  } 
+  
+  .cookie_content a{
+   text-decoration: underline;
+  } 
+  
+  .cookie-accept {
+	background-color: #000000;
+	color: #fbfbfb;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+  }
+  
 
 
 
@@ -523,6 +555,10 @@ h3.food-name{
 	.footer_menu{
 		text-align: left;
 	}
+	.cookie_content{
+		width: 90%;
+		margin:0 auto;
+	  } 
 	
 }
 

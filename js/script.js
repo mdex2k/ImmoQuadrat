@@ -180,3 +180,7 @@ function backToTop() {
         });
         };
         slider();
+
+
+        // cookie banner
+
